@@ -1,0 +1,907 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76448447218E02F4001EB26A /* KeePassLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448445218E02F4001EB26A /* KeePassLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		764484CD218E0495001EB26A /* OutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448458218E0495001EB26A /* OutputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		764484CE218E0495001EB26A /* HashedInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448459218E0495001EB26A /* HashedInputStream.h */; };
+		764484CF218E0495001EB26A /* FileOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 7644845A218E0495001EB26A /* FileOutputStream.h */; };
+		764484D0218E0495001EB26A /* Sha256OutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644845B218E0495001EB26A /* Sha256OutputStream.m */; };
+		764484D1218E0495001EB26A /* DataOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 7644845C218E0495001EB26A /* DataOutputStream.h */; };
+		764484D2218E0495001EB26A /* CipherStreamFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 7644845D218E0495001EB26A /* CipherStreamFactory.h */; };
+		764484D3218E0495001EB26A /* Arc4RandomStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 7644845E218E0495001EB26A /* Arc4RandomStream.h */; };
+		764484D4218E0495001EB26A /* DataInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644845F218E0495001EB26A /* DataInputStream.m */; };
+		764484D5218E0495001EB26A /* TwoFishInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448460218E0495001EB26A /* TwoFishInputStream.m */; };
+		764484D6218E0495001EB26A /* HmacInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448461218E0495001EB26A /* HmacInputStream.m */; };
+		764484D7218E0495001EB26A /* ChaCha20InputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448462218E0495001EB26A /* ChaCha20InputStream.h */; };
+		764484D8218E0495001EB26A /* InputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448463218E0495001EB26A /* InputStream.m */; };
+		764484D9218E0495001EB26A /* AesInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448464218E0495001EB26A /* AesInputStream.h */; };
+		764484DA218E0495001EB26A /* HmacOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448465218E0495001EB26A /* HmacOutputStream.h */; };
+		764484DB218E0495001EB26A /* HashedOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448466218E0495001EB26A /* HashedOutputStream.m */; };
+		764484DC218E0495001EB26A /* GZipOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448467218E0495001EB26A /* GZipOutputStream.h */; };
+		764484DD218E0495001EB26A /* ChaCha20OutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448468218E0495001EB26A /* ChaCha20OutputStream.h */; };
+		764484DE218E0495001EB26A /* GZipInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448469218E0495001EB26A /* GZipInputStream.m */; };
+		764484DF218E0495001EB26A /* AesOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 7644846A218E0495001EB26A /* AesOutputStream.h */; };
+		764484E0218E0495001EB26A /* FileInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644846B218E0495001EB26A /* FileInputStream.m */; };
+		764484E1218E0495001EB26A /* TwoFishOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644846C218E0495001EB26A /* TwoFishOutputStream.m */; };
+		764484E2218E0495001EB26A /* DataOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644846D218E0495001EB26A /* DataOutputStream.m */; };
+		764484E3218E0495001EB26A /* Sha256OutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 7644846E218E0495001EB26A /* Sha256OutputStream.h */; };
+		764484E4218E0495001EB26A /* FileOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644846F218E0495001EB26A /* FileOutputStream.m */; };
+		764484E5218E0496001EB26A /* HashedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448470218E0495001EB26A /* HashedInputStream.m */; };
+		764484E6218E0496001EB26A /* OutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448471218E0495001EB26A /* OutputStream.m */; };
+		764484E7218E0496001EB26A /* InputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448472218E0495001EB26A /* InputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		764484E8218E0496001EB26A /* AesInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448473218E0495001EB26A /* AesInputStream.m */; };
+		764484E9218E0496001EB26A /* ChaCha20InputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448474218E0495001EB26A /* ChaCha20InputStream.m */; };
+		764484EA218E0496001EB26A /* HmacInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448475218E0495001EB26A /* HmacInputStream.h */; };
+		764484EB218E0496001EB26A /* TwoFishInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448476218E0495001EB26A /* TwoFishInputStream.h */; };
+		764484EC218E0496001EB26A /* DataInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448477218E0495001EB26A /* DataInputStream.h */; };
+		764484ED218E0496001EB26A /* Arc4RandomStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448478218E0495001EB26A /* Arc4RandomStream.m */; };
+		764484EE218E0496001EB26A /* CipherStreamFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448479218E0495001EB26A /* CipherStreamFactory.m */; };
+		764484EF218E0496001EB26A /* HashedOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 7644847A218E0495001EB26A /* HashedOutputStream.h */; };
+		764484F0218E0496001EB26A /* HmacOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644847B218E0495001EB26A /* HmacOutputStream.m */; };
+		764484F1218E0496001EB26A /* TwoFishOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 7644847C218E0495001EB26A /* TwoFishOutputStream.h */; };
+		764484F2218E0496001EB26A /* AesOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644847D218E0495001EB26A /* AesOutputStream.m */; };
+		764484F3218E0496001EB26A /* FileInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 7644847E218E0495001EB26A /* FileInputStream.h */; };
+		764484F4218E0496001EB26A /* GZipInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 7644847F218E0495001EB26A /* GZipInputStream.h */; };
+		764484F5218E0496001EB26A /* ChaCha20OutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448480218E0495001EB26A /* ChaCha20OutputStream.m */; };
+		764484F6218E0496001EB26A /* GZipOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448481218E0495001EB26A /* GZipOutputStream.m */; };
+		764484F7218E0496001EB26A /* DDXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448483218E0495001EB26A /* DDXMLDocument.h */; };
+		764484F8218E0496001EB26A /* DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448484218E0495001EB26A /* DDXML.h */; };
+		764484F9218E0496001EB26A /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448485218E0495001EB26A /* DDXMLElement.m */; };
+		764484FA218E0496001EB26A /* DDXMLElementAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448487218E0495001EB26A /* DDXMLElementAdditions.h */; };
+		764484FB218E0496001EB26A /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448488218E0495001EB26A /* DDXMLElementAdditions.m */; };
+		764484FC218E0496001EB26A /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448489218E0495001EB26A /* DDXMLNode.m */; };
+		764484FD218E0496001EB26A /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644848A218E0495001EB26A /* DDXMLDocument.m */; };
+		764484FE218E0496001EB26A /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7644848C218E0495001EB26A /* DDXMLPrivate.h */; };
+		764484FF218E0496001EB26A /* DDXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 7644848D218E0495001EB26A /* DDXMLElement.h */; };
+		76448500218E0496001EB26A /* NSString+DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 7644848F218E0495001EB26A /* NSString+DDXML.h */; };
+		76448501218E0496001EB26A /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448490218E0495001EB26A /* NSString+DDXML.m */; };
+		76448502218E0496001EB26A /* DDXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448491218E0495001EB26A /* DDXMLNode.h */; };
+		76448503218E0496001EB26A /* Kdb3Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448493218E0495001EB26A /* Kdb3Node.m */; };
+		76448504218E0496001EB26A /* ChaCha20RandomStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448494218E0495001EB26A /* ChaCha20RandomStream.m */; };
+		76448505218E0496001EB26A /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448495218E0495001EB26A /* Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76448506218E0496001EB26A /* Kdb4Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448496218E0495001EB26A /* Kdb4Writer.m */; };
+		76448507218E0496001EB26A /* Kdb3Writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448497218E0495001EB26A /* Kdb3Writer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76448508218E0496001EB26A /* Salsa20Cipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 76448499218E0495001EB26A /* Salsa20Cipher.h */; };
+		76448509218E0496001EB26A /* BlockCipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644849A218E0495001EB26A /* BlockCipher.m */; };
+		7644850A218E0496001EB26A /* ChaCha20Cipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 7644849B218E0495001EB26A /* ChaCha20Cipher.h */; };
+		7644850B218E0496001EB26A /* TwoFishCipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644849C218E0495001EB26A /* TwoFishCipher.m */; };
+		7644850C218E0496001EB26A /* ChaCha20Cipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644849D218E0495001EB26A /* ChaCha20Cipher.m */; };
+		7644850D218E0496001EB26A /* BlockCipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 7644849E218E0495001EB26A /* BlockCipher.h */; };
+		7644850E218E0496001EB26A /* Salsa20Cipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644849F218E0495001EB26A /* Salsa20Cipher.m */; };
+		7644850F218E0496001EB26A /* TwoFishCipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484A0218E0495001EB26A /* TwoFishCipher.h */; };
+		76448510218E0496001EB26A /* KdbPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484A1218E0495001EB26A /* KdbPassword.m */; };
+		76448511218E0496001EB26A /* Kdb.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484A2218E0495001EB26A /* Kdb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76448512218E0496001EB26A /* Kdb3Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484A3218E0495001EB26A /* Kdb3Reader.m */; };
+		76448513218E0496001EB26A /* Kdb4Reader.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484A4218E0495001EB26A /* Kdb4Reader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76448515218E0496001EB26A /* Kdb3Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484A6218E0495001EB26A /* Kdb3Utils.m */; };
+		76448516218E0496001EB26A /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484A7218E0495001EB26A /* Base64.h */; };
+		76448517218E0496001EB26A /* Kdb3Date.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484A8218E0495001EB26A /* Kdb3Date.m */; };
+		76448518218E0496001EB26A /* UUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484A9218E0495001EB26A /* UUID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76448519218E0496001EB26A /* DDXMLDocument+MKPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484AA218E0495001EB26A /* DDXMLDocument+MKPAdditions.h */; };
+		7644851A218E0496001EB26A /* VariantDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484AB218E0495001EB26A /* VariantDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7644851B218E0496001EB26A /* KdbReaderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484AC218E0495001EB26A /* KdbReaderFactory.m */; };
+		7644851C218E0496001EB26A /* RandomStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484AD218E0495001EB26A /* RandomStream.m */; };
+		7644851D218E0496001EB26A /* KdbWriterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484AE218E0495001EB26A /* KdbWriterFactory.m */; };
+		7644851E218E0496001EB26A /* Kdb4Persist.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484AF218E0495001EB26A /* Kdb4Persist.m */; };
+		7644851F218E0496001EB26A /* Kdb4Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484B0218E0495001EB26A /* Kdb4Node.m */; };
+		76448520218E0496001EB26A /* Kdb4Parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484B1218E0495001EB26A /* Kdb4Parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76448521218E0496001EB26A /* Salsa20RandomStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484B2218E0495001EB26A /* Salsa20RandomStream.m */; };
+		76448522218E0496001EB26A /* KdbReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484B3218E0495001EB26A /* KdbReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76448523218E0496001EB26A /* Kdb.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484B4218E0495001EB26A /* Kdb.m */; };
+		76448524218E0496001EB26A /* KdbPassword.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484B5218E0495001EB26A /* KdbPassword.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76448525218E0496001EB26A /* Kdb3Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484B6218E0495001EB26A /* Kdb3Writer.m */; };
+		76448526218E0496001EB26A /* Kdb4Writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484B7218E0495001EB26A /* Kdb4Writer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76448527218E0496001EB26A /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484B8218E0495001EB26A /* Utils.m */; };
+		76448528218E0496001EB26A /* ChaCha20RandomStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484B9218E0495001EB26A /* ChaCha20RandomStream.h */; };
+		76448529218E0496001EB26A /* Kdb3Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484BA218E0495001EB26A /* Kdb3Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7644852A218E0496001EB26A /* VariantDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484BB218E0495001EB26A /* VariantDictionary.m */; };
+		7644852B218E0496001EB26A /* UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484BC218E0495001EB26A /* UUID.m */; };
+		7644852C218E0496001EB26A /* DDXMLDocument+MKPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484BD218E0495001EB26A /* DDXMLDocument+MKPAdditions.m */; };
+		7644852D218E0496001EB26A /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484BE218E0495001EB26A /* Base64.m */; };
+		7644852E218E0496001EB26A /* Kdb3Date.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484BF218E0495001EB26A /* Kdb3Date.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7644852F218E0496001EB26A /* Kdb3Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484C0218E0495001EB26A /* Kdb3Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76448530218E0496001EB26A /* Kdb4Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484C1218E0495001EB26A /* Kdb4Reader.m */; };
+		76448532218E0496001EB26A /* Kdb3Reader.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484C3218E0495001EB26A /* Kdb3Reader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76448533218E0496001EB26A /* KdbReaderFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484C4218E0495001EB26A /* KdbReaderFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76448534218E0496001EB26A /* KdbLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484C5218E0495001EB26A /* KdbLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76448535218E0496001EB26A /* KdbWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484C6218E0495001EB26A /* KdbWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76448536218E0496001EB26A /* Salsa20RandomStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484C7218E0495001EB26A /* Salsa20RandomStream.h */; };
+		76448537218E0496001EB26A /* Kdb4Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484C8218E0495001EB26A /* Kdb4Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76448538218E0496001EB26A /* Kdb4Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 764484C9218E0495001EB26A /* Kdb4Parser.m */; };
+		76448539218E0496001EB26A /* Kdb4Persist.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484CA218E0495001EB26A /* Kdb4Persist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7644853A218E0496001EB26A /* KdbWriterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484CB218E0495001EB26A /* KdbWriterFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7644853B218E0496001EB26A /* RandomStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 764484CC218E0495001EB26A /* RandomStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76448550218E05E7001EB26A /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7644853D218E04A4001EB26A /* libxml2.2.tbd */; };
+		76448558218E0710001EB26A /* argon2iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7644854C218E0551001EB26A /* argon2iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7644854B218E0551001EB26A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76448547218E0551001EB26A /* argon2iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78F8028B1E8EE2A50039625E;
+			remoteInfo = argon2iOS;
+		};
+		76448556218E06F8001EB26A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76448547218E0551001EB26A /* argon2iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78F8028A1E8EE2A50039625E;
+			remoteInfo = argon2iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76448442218E02F4001EB26A /* KeePassLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeePassLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76448445218E02F4001EB26A /* KeePassLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeePassLib.h; sourceTree = "<group>"; };
+		76448446218E02F4001EB26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76448458218E0495001EB26A /* OutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutputStream.h; sourceTree = "<group>"; };
+		76448459218E0495001EB26A /* HashedInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashedInputStream.h; sourceTree = "<group>"; };
+		7644845A218E0495001EB26A /* FileOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileOutputStream.h; sourceTree = "<group>"; };
+		7644845B218E0495001EB26A /* Sha256OutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sha256OutputStream.m; sourceTree = "<group>"; };
+		7644845C218E0495001EB26A /* DataOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataOutputStream.h; sourceTree = "<group>"; };
+		7644845D218E0495001EB26A /* CipherStreamFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CipherStreamFactory.h; sourceTree = "<group>"; };
+		7644845E218E0495001EB26A /* Arc4RandomStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arc4RandomStream.h; sourceTree = "<group>"; };
+		7644845F218E0495001EB26A /* DataInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataInputStream.m; sourceTree = "<group>"; };
+		76448460218E0495001EB26A /* TwoFishInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoFishInputStream.m; sourceTree = "<group>"; };
+		76448461218E0495001EB26A /* HmacInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HmacInputStream.m; sourceTree = "<group>"; };
+		76448462218E0495001EB26A /* ChaCha20InputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChaCha20InputStream.h; sourceTree = "<group>"; };
+		76448463218E0495001EB26A /* InputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputStream.m; sourceTree = "<group>"; };
+		76448464218E0495001EB26A /* AesInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AesInputStream.h; sourceTree = "<group>"; };
+		76448465218E0495001EB26A /* HmacOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HmacOutputStream.h; sourceTree = "<group>"; };
+		76448466218E0495001EB26A /* HashedOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HashedOutputStream.m; sourceTree = "<group>"; };
+		76448467218E0495001EB26A /* GZipOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZipOutputStream.h; sourceTree = "<group>"; };
+		76448468218E0495001EB26A /* ChaCha20OutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChaCha20OutputStream.h; sourceTree = "<group>"; };
+		76448469218E0495001EB26A /* GZipInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZipInputStream.m; sourceTree = "<group>"; };
+		7644846A218E0495001EB26A /* AesOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AesOutputStream.h; sourceTree = "<group>"; };
+		7644846B218E0495001EB26A /* FileInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInputStream.m; sourceTree = "<group>"; };
+		7644846C218E0495001EB26A /* TwoFishOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoFishOutputStream.m; sourceTree = "<group>"; };
+		7644846D218E0495001EB26A /* DataOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataOutputStream.m; sourceTree = "<group>"; };
+		7644846E218E0495001EB26A /* Sha256OutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sha256OutputStream.h; sourceTree = "<group>"; };
+		7644846F218E0495001EB26A /* FileOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileOutputStream.m; sourceTree = "<group>"; };
+		76448470218E0495001EB26A /* HashedInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HashedInputStream.m; sourceTree = "<group>"; };
+		76448471218E0495001EB26A /* OutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutputStream.m; sourceTree = "<group>"; };
+		76448472218E0495001EB26A /* InputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputStream.h; sourceTree = "<group>"; };
+		76448473218E0495001EB26A /* AesInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AesInputStream.m; sourceTree = "<group>"; };
+		76448474218E0495001EB26A /* ChaCha20InputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaCha20InputStream.m; sourceTree = "<group>"; };
+		76448475218E0495001EB26A /* HmacInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HmacInputStream.h; sourceTree = "<group>"; };
+		76448476218E0495001EB26A /* TwoFishInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoFishInputStream.h; sourceTree = "<group>"; };
+		76448477218E0495001EB26A /* DataInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataInputStream.h; sourceTree = "<group>"; };
+		76448478218E0495001EB26A /* Arc4RandomStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arc4RandomStream.m; sourceTree = "<group>"; };
+		76448479218E0495001EB26A /* CipherStreamFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CipherStreamFactory.m; sourceTree = "<group>"; };
+		7644847A218E0495001EB26A /* HashedOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashedOutputStream.h; sourceTree = "<group>"; };
+		7644847B218E0495001EB26A /* HmacOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HmacOutputStream.m; sourceTree = "<group>"; };
+		7644847C218E0495001EB26A /* TwoFishOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoFishOutputStream.h; sourceTree = "<group>"; };
+		7644847D218E0495001EB26A /* AesOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AesOutputStream.m; sourceTree = "<group>"; };
+		7644847E218E0495001EB26A /* FileInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInputStream.h; sourceTree = "<group>"; };
+		7644847F218E0495001EB26A /* GZipInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZipInputStream.h; sourceTree = "<group>"; };
+		76448480218E0495001EB26A /* ChaCha20OutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaCha20OutputStream.m; sourceTree = "<group>"; };
+		76448481218E0495001EB26A /* GZipOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZipOutputStream.m; sourceTree = "<group>"; };
+		76448483218E0495001EB26A /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
+		76448484218E0495001EB26A /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
+		76448485218E0495001EB26A /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
+		76448487218E0495001EB26A /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
+		76448488218E0495001EB26A /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
+		76448489218E0495001EB26A /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
+		7644848A218E0495001EB26A /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
+		7644848C218E0495001EB26A /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		7644848D218E0495001EB26A /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
+		7644848F218E0495001EB26A /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
+		76448490218E0495001EB26A /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
+		76448491218E0495001EB26A /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
+		76448493218E0495001EB26A /* Kdb3Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb3Node.m; sourceTree = "<group>"; };
+		76448494218E0495001EB26A /* ChaCha20RandomStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaCha20RandomStream.m; sourceTree = "<group>"; };
+		76448495218E0495001EB26A /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		76448496218E0495001EB26A /* Kdb4Writer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb4Writer.m; sourceTree = "<group>"; };
+		76448497218E0495001EB26A /* Kdb3Writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb3Writer.h; sourceTree = "<group>"; };
+		76448499218E0495001EB26A /* Salsa20Cipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Salsa20Cipher.h; sourceTree = "<group>"; };
+		7644849A218E0495001EB26A /* BlockCipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockCipher.m; sourceTree = "<group>"; };
+		7644849B218E0495001EB26A /* ChaCha20Cipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChaCha20Cipher.h; sourceTree = "<group>"; };
+		7644849C218E0495001EB26A /* TwoFishCipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoFishCipher.m; sourceTree = "<group>"; };
+		7644849D218E0495001EB26A /* ChaCha20Cipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaCha20Cipher.m; sourceTree = "<group>"; };
+		7644849E218E0495001EB26A /* BlockCipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockCipher.h; sourceTree = "<group>"; };
+		7644849F218E0495001EB26A /* Salsa20Cipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Salsa20Cipher.m; sourceTree = "<group>"; };
+		764484A0218E0495001EB26A /* TwoFishCipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoFishCipher.h; sourceTree = "<group>"; };
+		764484A1218E0495001EB26A /* KdbPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KdbPassword.m; sourceTree = "<group>"; };
+		764484A2218E0495001EB26A /* Kdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb.h; sourceTree = "<group>"; };
+		764484A3218E0495001EB26A /* Kdb3Reader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb3Reader.m; sourceTree = "<group>"; };
+		764484A4218E0495001EB26A /* Kdb4Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb4Reader.h; sourceTree = "<group>"; };
+		764484A6218E0495001EB26A /* Kdb3Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb3Utils.m; sourceTree = "<group>"; };
+		764484A7218E0495001EB26A /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		764484A8218E0495001EB26A /* Kdb3Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb3Date.m; sourceTree = "<group>"; };
+		764484A9218E0495001EB26A /* UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUID.h; sourceTree = "<group>"; };
+		764484AA218E0495001EB26A /* DDXMLDocument+MKPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDXMLDocument+MKPAdditions.h"; sourceTree = "<group>"; };
+		764484AB218E0495001EB26A /* VariantDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariantDictionary.h; sourceTree = "<group>"; };
+		764484AC218E0495001EB26A /* KdbReaderFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KdbReaderFactory.m; sourceTree = "<group>"; };
+		764484AD218E0495001EB26A /* RandomStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomStream.m; sourceTree = "<group>"; };
+		764484AE218E0495001EB26A /* KdbWriterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KdbWriterFactory.m; sourceTree = "<group>"; };
+		764484AF218E0495001EB26A /* Kdb4Persist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb4Persist.m; sourceTree = "<group>"; };
+		764484B0218E0495001EB26A /* Kdb4Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb4Node.m; sourceTree = "<group>"; };
+		764484B1218E0495001EB26A /* Kdb4Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb4Parser.h; sourceTree = "<group>"; };
+		764484B2218E0495001EB26A /* Salsa20RandomStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Salsa20RandomStream.m; sourceTree = "<group>"; };
+		764484B3218E0495001EB26A /* KdbReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KdbReader.h; sourceTree = "<group>"; };
+		764484B4218E0495001EB26A /* Kdb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb.m; sourceTree = "<group>"; };
+		764484B5218E0495001EB26A /* KdbPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KdbPassword.h; sourceTree = "<group>"; };
+		764484B6218E0495001EB26A /* Kdb3Writer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb3Writer.m; sourceTree = "<group>"; };
+		764484B7218E0495001EB26A /* Kdb4Writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb4Writer.h; sourceTree = "<group>"; };
+		764484B8218E0495001EB26A /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		764484B9218E0495001EB26A /* ChaCha20RandomStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChaCha20RandomStream.h; sourceTree = "<group>"; };
+		764484BA218E0495001EB26A /* Kdb3Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb3Node.h; sourceTree = "<group>"; };
+		764484BB218E0495001EB26A /* VariantDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariantDictionary.m; sourceTree = "<group>"; };
+		764484BC218E0495001EB26A /* UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUID.m; sourceTree = "<group>"; };
+		764484BD218E0495001EB26A /* DDXMLDocument+MKPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDXMLDocument+MKPAdditions.m"; sourceTree = "<group>"; };
+		764484BE218E0495001EB26A /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		764484BF218E0495001EB26A /* Kdb3Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb3Date.h; sourceTree = "<group>"; };
+		764484C0218E0495001EB26A /* Kdb3Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb3Utils.h; sourceTree = "<group>"; };
+		764484C1218E0495001EB26A /* Kdb4Reader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb4Reader.m; sourceTree = "<group>"; };
+		764484C3218E0495001EB26A /* Kdb3Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb3Reader.h; sourceTree = "<group>"; };
+		764484C4218E0495001EB26A /* KdbReaderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KdbReaderFactory.h; sourceTree = "<group>"; };
+		764484C5218E0495001EB26A /* KdbLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KdbLib.h; sourceTree = "<group>"; };
+		764484C6218E0495001EB26A /* KdbWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KdbWriter.h; sourceTree = "<group>"; };
+		764484C7218E0495001EB26A /* Salsa20RandomStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Salsa20RandomStream.h; sourceTree = "<group>"; };
+		764484C8218E0495001EB26A /* Kdb4Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb4Node.h; sourceTree = "<group>"; };
+		764484C9218E0495001EB26A /* Kdb4Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb4Parser.m; sourceTree = "<group>"; };
+		764484CA218E0495001EB26A /* Kdb4Persist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb4Persist.h; sourceTree = "<group>"; };
+		764484CB218E0495001EB26A /* KdbWriterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KdbWriterFactory.h; sourceTree = "<group>"; };
+		764484CC218E0495001EB26A /* RandomStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomStream.h; sourceTree = "<group>"; };
+		7644853D218E04A4001EB26A /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		76448547218E0551001EB26A /* argon2iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = argon2iOS.xcodeproj; path = MiniKeePass/argon2iOS.xcodeproj; sourceTree = "<group>"; };
+		764485BA218E11C4001EB26A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7644843F218E02F4001EB26A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76448558218E0710001EB26A /* argon2iOS.framework in Frameworks */,
+				76448550218E05E7001EB26A /* libxml2.2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76448438218E02F4001EB26A = {
+			isa = PBXGroup;
+			children = (
+				764485BA218E11C4001EB26A /* README.md */,
+				76448444218E02F4001EB26A /* KeePassLib */,
+				76448443218E02F4001EB26A /* Products */,
+				7644853C218E04A4001EB26A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		76448443218E02F4001EB26A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76448442218E02F4001EB26A /* KeePassLib.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76448444218E02F4001EB26A /* KeePassLib */ = {
+			isa = PBXGroup;
+			children = (
+				76448445218E02F4001EB26A /* KeePassLib.h */,
+				76448446218E02F4001EB26A /* Info.plist */,
+				76448456218E046E001EB26A /* Vendored */,
+			);
+			path = KeePassLib;
+			sourceTree = "<group>";
+		};
+		76448456218E046E001EB26A /* Vendored */ = {
+			isa = PBXGroup;
+			children = (
+				76448547218E0551001EB26A /* argon2iOS.xcodeproj */,
+				76448457218E0495001EB26A /* IOStream */,
+				76448492218E0495001EB26A /* KeePassLib */,
+				76448482218E0495001EB26A /* KissXML */,
+			);
+			name = Vendored;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		76448457218E0495001EB26A /* IOStream */ = {
+			isa = PBXGroup;
+			children = (
+				76448458218E0495001EB26A /* OutputStream.h */,
+				76448459218E0495001EB26A /* HashedInputStream.h */,
+				7644845A218E0495001EB26A /* FileOutputStream.h */,
+				7644845B218E0495001EB26A /* Sha256OutputStream.m */,
+				7644845C218E0495001EB26A /* DataOutputStream.h */,
+				7644845D218E0495001EB26A /* CipherStreamFactory.h */,
+				7644845E218E0495001EB26A /* Arc4RandomStream.h */,
+				7644845F218E0495001EB26A /* DataInputStream.m */,
+				76448460218E0495001EB26A /* TwoFishInputStream.m */,
+				76448461218E0495001EB26A /* HmacInputStream.m */,
+				76448462218E0495001EB26A /* ChaCha20InputStream.h */,
+				76448463218E0495001EB26A /* InputStream.m */,
+				76448464218E0495001EB26A /* AesInputStream.h */,
+				76448465218E0495001EB26A /* HmacOutputStream.h */,
+				76448466218E0495001EB26A /* HashedOutputStream.m */,
+				76448467218E0495001EB26A /* GZipOutputStream.h */,
+				76448468218E0495001EB26A /* ChaCha20OutputStream.h */,
+				76448469218E0495001EB26A /* GZipInputStream.m */,
+				7644846A218E0495001EB26A /* AesOutputStream.h */,
+				7644846B218E0495001EB26A /* FileInputStream.m */,
+				7644846C218E0495001EB26A /* TwoFishOutputStream.m */,
+				7644846D218E0495001EB26A /* DataOutputStream.m */,
+				7644846E218E0495001EB26A /* Sha256OutputStream.h */,
+				7644846F218E0495001EB26A /* FileOutputStream.m */,
+				76448470218E0495001EB26A /* HashedInputStream.m */,
+				76448471218E0495001EB26A /* OutputStream.m */,
+				76448472218E0495001EB26A /* InputStream.h */,
+				76448473218E0495001EB26A /* AesInputStream.m */,
+				76448474218E0495001EB26A /* ChaCha20InputStream.m */,
+				76448475218E0495001EB26A /* HmacInputStream.h */,
+				76448476218E0495001EB26A /* TwoFishInputStream.h */,
+				76448477218E0495001EB26A /* DataInputStream.h */,
+				76448478218E0495001EB26A /* Arc4RandomStream.m */,
+				76448479218E0495001EB26A /* CipherStreamFactory.m */,
+				7644847A218E0495001EB26A /* HashedOutputStream.h */,
+				7644847B218E0495001EB26A /* HmacOutputStream.m */,
+				7644847C218E0495001EB26A /* TwoFishOutputStream.h */,
+				7644847D218E0495001EB26A /* AesOutputStream.m */,
+				7644847E218E0495001EB26A /* FileInputStream.h */,
+				7644847F218E0495001EB26A /* GZipInputStream.h */,
+				76448480218E0495001EB26A /* ChaCha20OutputStream.m */,
+				76448481218E0495001EB26A /* GZipOutputStream.m */,
+			);
+			name = IOStream;
+			path = MiniKeePass/IOStream;
+			sourceTree = "<group>";
+		};
+		76448482218E0495001EB26A /* KissXML */ = {
+			isa = PBXGroup;
+			children = (
+				76448483218E0495001EB26A /* DDXMLDocument.h */,
+				76448484218E0495001EB26A /* DDXML.h */,
+				76448485218E0495001EB26A /* DDXMLElement.m */,
+				76448486218E0495001EB26A /* Additions */,
+				76448489218E0495001EB26A /* DDXMLNode.m */,
+				7644848A218E0495001EB26A /* DDXMLDocument.m */,
+				7644848B218E0495001EB26A /* Private */,
+				7644848D218E0495001EB26A /* DDXMLElement.h */,
+				7644848E218E0495001EB26A /* Categories */,
+				76448491218E0495001EB26A /* DDXMLNode.h */,
+			);
+			name = KissXML;
+			path = MiniKeePass/KissXML;
+			sourceTree = "<group>";
+		};
+		76448486218E0495001EB26A /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				76448487218E0495001EB26A /* DDXMLElementAdditions.h */,
+				76448488218E0495001EB26A /* DDXMLElementAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		7644848B218E0495001EB26A /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				7644848C218E0495001EB26A /* DDXMLPrivate.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		7644848E218E0495001EB26A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				7644848F218E0495001EB26A /* NSString+DDXML.h */,
+				76448490218E0495001EB26A /* NSString+DDXML.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		76448492218E0495001EB26A /* KeePassLib */ = {
+			isa = PBXGroup;
+			children = (
+				76448493218E0495001EB26A /* Kdb3Node.m */,
+				76448494218E0495001EB26A /* ChaCha20RandomStream.m */,
+				76448495218E0495001EB26A /* Utils.h */,
+				76448496218E0495001EB26A /* Kdb4Writer.m */,
+				76448497218E0495001EB26A /* Kdb3Writer.h */,
+				76448498218E0495001EB26A /* Crypto */,
+				764484A1218E0495001EB26A /* KdbPassword.m */,
+				764484A2218E0495001EB26A /* Kdb.h */,
+				764484A3218E0495001EB26A /* Kdb3Reader.m */,
+				764484A4218E0495001EB26A /* Kdb4Reader.h */,
+				764484A6218E0495001EB26A /* Kdb3Utils.m */,
+				764484A7218E0495001EB26A /* Base64.h */,
+				764484A8218E0495001EB26A /* Kdb3Date.m */,
+				764484A9218E0495001EB26A /* UUID.h */,
+				764484AA218E0495001EB26A /* DDXMLDocument+MKPAdditions.h */,
+				764484AB218E0495001EB26A /* VariantDictionary.h */,
+				764484AC218E0495001EB26A /* KdbReaderFactory.m */,
+				764484AD218E0495001EB26A /* RandomStream.m */,
+				764484AE218E0495001EB26A /* KdbWriterFactory.m */,
+				764484AF218E0495001EB26A /* Kdb4Persist.m */,
+				764484B0218E0495001EB26A /* Kdb4Node.m */,
+				764484B1218E0495001EB26A /* Kdb4Parser.h */,
+				764484B2218E0495001EB26A /* Salsa20RandomStream.m */,
+				764484B3218E0495001EB26A /* KdbReader.h */,
+				764484B4218E0495001EB26A /* Kdb.m */,
+				764484B5218E0495001EB26A /* KdbPassword.h */,
+				764484B6218E0495001EB26A /* Kdb3Writer.m */,
+				764484B7218E0495001EB26A /* Kdb4Writer.h */,
+				764484B8218E0495001EB26A /* Utils.m */,
+				764484B9218E0495001EB26A /* ChaCha20RandomStream.h */,
+				764484BA218E0495001EB26A /* Kdb3Node.h */,
+				764484BB218E0495001EB26A /* VariantDictionary.m */,
+				764484BC218E0495001EB26A /* UUID.m */,
+				764484BD218E0495001EB26A /* DDXMLDocument+MKPAdditions.m */,
+				764484BE218E0495001EB26A /* Base64.m */,
+				764484BF218E0495001EB26A /* Kdb3Date.h */,
+				764484C0218E0495001EB26A /* Kdb3Utils.h */,
+				764484C1218E0495001EB26A /* Kdb4Reader.m */,
+				764484C3218E0495001EB26A /* Kdb3Reader.h */,
+				764484C4218E0495001EB26A /* KdbReaderFactory.h */,
+				764484C5218E0495001EB26A /* KdbLib.h */,
+				764484C6218E0495001EB26A /* KdbWriter.h */,
+				764484C7218E0495001EB26A /* Salsa20RandomStream.h */,
+				764484C8218E0495001EB26A /* Kdb4Node.h */,
+				764484C9218E0495001EB26A /* Kdb4Parser.m */,
+				764484CA218E0495001EB26A /* Kdb4Persist.h */,
+				764484CB218E0495001EB26A /* KdbWriterFactory.h */,
+				764484CC218E0495001EB26A /* RandomStream.h */,
+			);
+			name = KeePassLib;
+			path = MiniKeePass/KeePassLib;
+			sourceTree = "<group>";
+		};
+		76448498218E0495001EB26A /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				76448499218E0495001EB26A /* Salsa20Cipher.h */,
+				7644849A218E0495001EB26A /* BlockCipher.m */,
+				7644849B218E0495001EB26A /* ChaCha20Cipher.h */,
+				7644849C218E0495001EB26A /* TwoFishCipher.m */,
+				7644849D218E0495001EB26A /* ChaCha20Cipher.m */,
+				7644849E218E0495001EB26A /* BlockCipher.h */,
+				7644849F218E0495001EB26A /* Salsa20Cipher.m */,
+				764484A0218E0495001EB26A /* TwoFishCipher.h */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		7644853C218E04A4001EB26A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7644853D218E04A4001EB26A /* libxml2.2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76448548218E0551001EB26A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7644854C218E0551001EB26A /* argon2iOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7644843D218E02F4001EB26A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76448507218E0496001EB26A /* Kdb3Writer.h in Headers */,
+				76448511218E0496001EB26A /* Kdb.h in Headers */,
+				76448513218E0496001EB26A /* Kdb4Reader.h in Headers */,
+				76448520218E0496001EB26A /* Kdb4Parser.h in Headers */,
+				76448522218E0496001EB26A /* KdbReader.h in Headers */,
+				76448524218E0496001EB26A /* KdbPassword.h in Headers */,
+				76448526218E0496001EB26A /* Kdb4Writer.h in Headers */,
+				76448529218E0496001EB26A /* Kdb3Node.h in Headers */,
+				7644852E218E0496001EB26A /* Kdb3Date.h in Headers */,
+				7644852F218E0496001EB26A /* Kdb3Utils.h in Headers */,
+				76448532218E0496001EB26A /* Kdb3Reader.h in Headers */,
+				76448533218E0496001EB26A /* KdbReaderFactory.h in Headers */,
+				76448534218E0496001EB26A /* KdbLib.h in Headers */,
+				76448535218E0496001EB26A /* KdbWriter.h in Headers */,
+				76448537218E0496001EB26A /* Kdb4Node.h in Headers */,
+				76448539218E0496001EB26A /* Kdb4Persist.h in Headers */,
+				7644853A218E0496001EB26A /* KdbWriterFactory.h in Headers */,
+				764484D3218E0495001EB26A /* Arc4RandomStream.h in Headers */,
+				7644851A218E0496001EB26A /* VariantDictionary.h in Headers */,
+				76448518218E0496001EB26A /* UUID.h in Headers */,
+				7644853B218E0496001EB26A /* RandomStream.h in Headers */,
+				764484CD218E0495001EB26A /* OutputStream.h in Headers */,
+				76448505218E0496001EB26A /* Utils.h in Headers */,
+				764484E7218E0496001EB26A /* InputStream.h in Headers */,
+				76448508218E0496001EB26A /* Salsa20Cipher.h in Headers */,
+				7644850A218E0496001EB26A /* ChaCha20Cipher.h in Headers */,
+				7644850D218E0496001EB26A /* BlockCipher.h in Headers */,
+				7644850F218E0496001EB26A /* TwoFishCipher.h in Headers */,
+				76448528218E0496001EB26A /* ChaCha20RandomStream.h in Headers */,
+				76448536218E0496001EB26A /* Salsa20RandomStream.h in Headers */,
+				764484F3218E0496001EB26A /* FileInputStream.h in Headers */,
+				764484D9218E0495001EB26A /* AesInputStream.h in Headers */,
+				764484E3218E0495001EB26A /* Sha256OutputStream.h in Headers */,
+				764484DA218E0495001EB26A /* HmacOutputStream.h in Headers */,
+				764484F1218E0496001EB26A /* TwoFishOutputStream.h in Headers */,
+				764484F8218E0496001EB26A /* DDXML.h in Headers */,
+				76448519218E0496001EB26A /* DDXMLDocument+MKPAdditions.h in Headers */,
+				764484DF218E0495001EB26A /* AesOutputStream.h in Headers */,
+				764484F4218E0496001EB26A /* GZipInputStream.h in Headers */,
+				764484DD218E0495001EB26A /* ChaCha20OutputStream.h in Headers */,
+				76448502218E0496001EB26A /* DDXMLNode.h in Headers */,
+				76448516218E0496001EB26A /* Base64.h in Headers */,
+				764484EF218E0496001EB26A /* HashedOutputStream.h in Headers */,
+				764484D7218E0495001EB26A /* ChaCha20InputStream.h in Headers */,
+				764484EC218E0496001EB26A /* DataInputStream.h in Headers */,
+				764484D2218E0495001EB26A /* CipherStreamFactory.h in Headers */,
+				764484D1218E0495001EB26A /* DataOutputStream.h in Headers */,
+				764484EB218E0496001EB26A /* TwoFishInputStream.h in Headers */,
+				76448447218E02F4001EB26A /* KeePassLib.h in Headers */,
+				764484CF218E0495001EB26A /* FileOutputStream.h in Headers */,
+				764484FE218E0496001EB26A /* DDXMLPrivate.h in Headers */,
+				764484FA218E0496001EB26A /* DDXMLElementAdditions.h in Headers */,
+				764484EA218E0496001EB26A /* HmacInputStream.h in Headers */,
+				764484DC218E0495001EB26A /* GZipOutputStream.h in Headers */,
+				764484CE218E0495001EB26A /* HashedInputStream.h in Headers */,
+				764484FF218E0496001EB26A /* DDXMLElement.h in Headers */,
+				76448500218E0496001EB26A /* NSString+DDXML.h in Headers */,
+				764484F7218E0496001EB26A /* DDXMLDocument.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		76448441218E02F4001EB26A /* KeePassLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7644844A218E02F4001EB26A /* Build configuration list for PBXNativeTarget "KeePassLib" */;
+			buildPhases = (
+				7644843D218E02F4001EB26A /* Headers */,
+				7644843E218E02F4001EB26A /* Sources */,
+				7644843F218E02F4001EB26A /* Frameworks */,
+				76448440218E02F4001EB26A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76448557218E06F8001EB26A /* PBXTargetDependency */,
+			);
+			name = KeePassLib;
+			productName = KeePassLib;
+			productReference = 76448442218E02F4001EB26A /* KeePassLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76448439218E02F4001EB26A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = ThinkChaos;
+				TargetAttributes = {
+					76448441218E02F4001EB26A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 7644843C218E02F4001EB26A /* Build configuration list for PBXProject "KeePassLib" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 76448438218E02F4001EB26A;
+			productRefGroup = 76448443218E02F4001EB26A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 76448548218E0551001EB26A /* Products */;
+					ProjectRef = 76448547218E0551001EB26A /* argon2iOS.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				76448441218E02F4001EB26A /* KeePassLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7644854C218E0551001EB26A /* argon2iOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = argon2iOS.framework;
+			remoteRef = 7644854B218E0551001EB26A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76448440218E02F4001EB26A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7644843E218E02F4001EB26A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76448510218E0496001EB26A /* KdbPassword.m in Sources */,
+				7644850C218E0496001EB26A /* ChaCha20Cipher.m in Sources */,
+				76448509218E0496001EB26A /* BlockCipher.m in Sources */,
+				764484E8218E0496001EB26A /* AesInputStream.m in Sources */,
+				764484E2218E0495001EB26A /* DataOutputStream.m in Sources */,
+				764484E0218E0495001EB26A /* FileInputStream.m in Sources */,
+				76448530218E0496001EB26A /* Kdb4Reader.m in Sources */,
+				764484E9218E0496001EB26A /* ChaCha20InputStream.m in Sources */,
+				764484ED218E0496001EB26A /* Arc4RandomStream.m in Sources */,
+				7644852B218E0496001EB26A /* UUID.m in Sources */,
+				7644850E218E0496001EB26A /* Salsa20Cipher.m in Sources */,
+				76448525218E0496001EB26A /* Kdb3Writer.m in Sources */,
+				7644851B218E0496001EB26A /* KdbReaderFactory.m in Sources */,
+				76448501218E0496001EB26A /* NSString+DDXML.m in Sources */,
+				7644851D218E0496001EB26A /* KdbWriterFactory.m in Sources */,
+				7644851F218E0496001EB26A /* Kdb4Node.m in Sources */,
+				764484E1218E0495001EB26A /* TwoFishOutputStream.m in Sources */,
+				764484FB218E0496001EB26A /* DDXMLElementAdditions.m in Sources */,
+				764484D4218E0495001EB26A /* DataInputStream.m in Sources */,
+				7644851E218E0496001EB26A /* Kdb4Persist.m in Sources */,
+				764484F0218E0496001EB26A /* HmacOutputStream.m in Sources */,
+				7644852A218E0496001EB26A /* VariantDictionary.m in Sources */,
+				764484F5218E0496001EB26A /* ChaCha20OutputStream.m in Sources */,
+				764484D6218E0495001EB26A /* HmacInputStream.m in Sources */,
+				76448527218E0496001EB26A /* Utils.m in Sources */,
+				76448503218E0496001EB26A /* Kdb3Node.m in Sources */,
+				76448506218E0496001EB26A /* Kdb4Writer.m in Sources */,
+				764484D8218E0495001EB26A /* InputStream.m in Sources */,
+				764484E4218E0495001EB26A /* FileOutputStream.m in Sources */,
+				76448517218E0496001EB26A /* Kdb3Date.m in Sources */,
+				764484D5218E0495001EB26A /* TwoFishInputStream.m in Sources */,
+				764484D0218E0495001EB26A /* Sha256OutputStream.m in Sources */,
+				764484F9218E0496001EB26A /* DDXMLElement.m in Sources */,
+				76448521218E0496001EB26A /* Salsa20RandomStream.m in Sources */,
+				76448515218E0496001EB26A /* Kdb3Utils.m in Sources */,
+				764484FD218E0496001EB26A /* DDXMLDocument.m in Sources */,
+				76448538218E0496001EB26A /* Kdb4Parser.m in Sources */,
+				7644852C218E0496001EB26A /* DDXMLDocument+MKPAdditions.m in Sources */,
+				7644852D218E0496001EB26A /* Base64.m in Sources */,
+				764484F6218E0496001EB26A /* GZipOutputStream.m in Sources */,
+				76448504218E0496001EB26A /* ChaCha20RandomStream.m in Sources */,
+				76448523218E0496001EB26A /* Kdb.m in Sources */,
+				764484F2218E0496001EB26A /* AesOutputStream.m in Sources */,
+				7644850B218E0496001EB26A /* TwoFishCipher.m in Sources */,
+				764484E6218E0496001EB26A /* OutputStream.m in Sources */,
+				764484DB218E0495001EB26A /* HashedOutputStream.m in Sources */,
+				76448512218E0496001EB26A /* Kdb3Reader.m in Sources */,
+				7644851C218E0496001EB26A /* RandomStream.m in Sources */,
+				764484EE218E0496001EB26A /* CipherStreamFactory.m in Sources */,
+				764484FC218E0496001EB26A /* DDXMLNode.m in Sources */,
+				764484DE218E0495001EB26A /* GZipInputStream.m in Sources */,
+				764484E5218E0496001EB26A /* HashedInputStream.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76448557218E06F8001EB26A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = argon2iOS;
+			targetProxy = 76448556218E06F8001EB26A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		76448448218E02F4001EB26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		76448449218E02F4001EB26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7644844B218E02F4001EB26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = KeePassLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thinkchaos.KeePassLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7644844C218E02F4001EB26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = KeePassLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thinkchaos.KeePassLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7644843C218E02F4001EB26A /* Build configuration list for PBXProject "KeePassLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76448448218E02F4001EB26A /* Debug */,
+				76448449218E02F4001EB26A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7644844A218E02F4001EB26A /* Build configuration list for PBXNativeTarget "KeePassLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7644844B218E02F4001EB26A /* Debug */,
+				7644844C218E02F4001EB26A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76448439218E02F4001EB26A /* Project object */;
+}

@@ -1,0 +1,3 @@
+[submodule "MiniKeePass"]
+	path = MiniKeePass
+	url = https://github.com/abcdev/MiniKeePass.git
